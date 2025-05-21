@@ -86,11 +86,7 @@ public class PostgresInstaller implements CommandLineRunner {
      */
     public String configurePostgres() throws IOException, InterruptedException {
         System.out.println("Chargement des configurations depuis le fichier .env...");
-
-        // Debug: Print all loaded environment variables
-        dotenv.entries().forEach(entry -> 
-            System.out.println("Variable d'environnement chargée : " + entry.getKey() + " = " + entry.getValue())
-        );
+    
 
         // Récupère les informations de configuration depuis les variables d'environnement
         String username = dotenv.get("POSTGRES_USER");
