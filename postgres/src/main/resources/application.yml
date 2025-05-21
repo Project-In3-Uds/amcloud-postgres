@@ -1,6 +1,8 @@
 spring:
   application:
     name: postgres
+  main:
+    web-application-type: none  
   config:
     import:
       - "optional:configserver:http://localhost:8888"
