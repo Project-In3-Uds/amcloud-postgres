@@ -62,9 +62,9 @@ public class PostgresApplication implements CommandLineRunner { // Implémente C
             return;
         }
 
-        System.out.println("Mise à jour des paquets...");
+        // System.out.println("Mise à jour des paquets...");
         // Exécute la commande de mise à jour des paquets
-        runCommand("sudo", "apt", "update");
+        //runCommand("sudo", "apt", "update");
 
         System.out.println("Installation de PostgreSQL...");
         // Exécute la commande d'installation de PostgreSQL
